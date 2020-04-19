@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lattice Plot for C2</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
+  <!-- Script needed to include LaTex in the document -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+      <!-- Script needed to include LaTex in the document -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</head>
+<body>
+  <div id="title">
+    <h1><label for="lie_algs">Below is the Plot for Lie Algebra: </label></h1>
+    <select id="lie_algs" onchange="location = this.value;">
+      <option value="../d2/d2.html">D2</option>
+      <option value="../b2/b2.html">B2</option>
+      <option value="c2.html" selected>C2</option>
+      <option value="../g2/g2.html">G2</option>
+    </select>
+  </div>
+
+  <div id="options">
+    <label for="n">Please give a value for n:</label>
+    <input type="number" name="n" value="0" step="1" min="0" max="10">
+
+    <label for="m">Please give a value for m:</label>
+    <input type="number" name="m" value="0" step="1" min="0" max="10">
+    <button id="generate">Generate Plot</button>
+  </div>
+
+  <div id="result">
+  </div>
+
+  <script type="text/javascript" src="c2.js"></script>
+</body>
+</html>

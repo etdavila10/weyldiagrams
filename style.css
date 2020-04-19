@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  /*text-align: center;*/
+}
+
+#result {
+  margin: 40px auto;
+  width: 700px;
+  height: 700px;
+  background-color: #fffbf2;
+  border: 2px solid #c8c2b5;
+  position: relative;
+}
+
+.data-info {
+  padding: 3px 10px;
+  background-color: white;
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#lie_algs {
+  font-size: 1.3em;
+}
+
+.label {
+  position: absolute;
+  font-size: 1.3em;
+}
+
+h1 {
+  display: inline-block;
+}
+
+#title {
+  text-align: center;
+}
+
+#options {
+  text-align: center;
+  font-size: 1.3em;
+}
